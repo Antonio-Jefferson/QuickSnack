@@ -24,31 +24,32 @@
             <h2>Primeiro, seu prato</h2>
             <div class="section_pratos">
                 <div class="conteiner_pratos">
-                    <div class="card">
+                    <div onclick="selecionar1()" id="card1" class="card">
+                        <img src="img/frango_yin_yang 1.png">
+                        <h3>Frango Yin Yang</h3>
+                        <p>Um pouco de batata, um pouco de salada</p>
+                        <h4>R$ 14,90</h4>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div onclick="selecionar2()" id="card2" class="card">
                         <img src="img/frango_yin_yang 1.png">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
-                        <img src="img/frango_yin_yang 1.png">
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <h4>R$ 14,90</h4>
-                    </div>
-                    <div class="card">
+                    <div onclick="selecionar3()"  id="card3" class="card">
                         <img src="img/frango_yin_yang 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar4()" id="card4" class="card">
                         <img src="img/frango_yin_yang 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar5()" id="card5" class="card">
                         <img src="img/frango_yin_yang 1.png">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
@@ -61,31 +62,31 @@
             <h2>Segundo, seu prato</h2>
             <div class="section_pratos">
                 <div class="conteiner_pratos">
-                    <div class="card">
+                    <div onclick="selecionar6()" id="card6" class="card">
                         <img src="img/coquinha_gelada 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div  onclick="selecionar7()" id="card7" class="card">
                         <img src="img/coquinha_gelada 1.png">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div  onclick="selecionar8()" id="card8" class="card">
                         <img src="img/coquinha_gelada 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div  onclick="selecionar9()" id="card9" class="card">
                         <img src="img/coquinha_gelada 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div  onclick="selecionar10()" id="card10" class="card">
                         <img src="img/coquinha_gelada 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
@@ -98,31 +99,31 @@
             <h2>Terceiro, seu prato</h2>
             <div class="section_pratos">
                 <div class="conteiner_pratos">
-                    <div class="card">
+                    <div  onclick="selecionar11()" id="card11" class="card">
                         <img src="img/pudim 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar12()" id="card12" class="card">
                         <img src="img/pudim 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar13()" id="card13" class="card">
                         <img src="img/pudim 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar14()" id="card14" class="card">
                         <img src="img/pudim 1.png" >
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 14,90</h4>
                     </div>
-                    <div class="card">
+                    <div onclick="selecionar15()" id="card15" class="card">
                         <img src="img/pudim 1.png">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
@@ -137,6 +138,8 @@
             <button class="btn" onclick=" fazerPeido()">Selecione os 3 itens <br> para fechar o pedido</button>
         </div>
     </footer>   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
