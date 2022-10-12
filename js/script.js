@@ -13,21 +13,23 @@ let card12 = document.getElementById('card12');
 let card13 = document.getElementById('card13');
 let card14 = document.getElementById('card14');
 let card15 = document.getElementById('card15');
+let icon = document.getElementById('icon');
 
 
 
 
-let prato;
-let valorPrato;
-let cocoquinha;
-let valorCoca;
-let sobremesa;
-let valorSobremesa;
-let total;
-let cont1;
-let cont2;
-let cont3;
-let valor;
+
+let prato = "";
+let valorPrato = 0;
+let cocoquinha= "";
+let valorCoca = 0;
+let sobremesa = "";
+let valorSobremesa = 0;
+let total = 0;
+let cont1 = 0;
+let cont2 = 0;
+let cont3 = 0;
+let valor = 0;
 
 //SESSÃO ONE!!!!!! ===================== eu SEI QUE NÃO É A MELHOR FORMA!
 function selecionar1(){
@@ -36,6 +38,7 @@ function selecionar1(){
     card3.classList.remove('corbordCard');
     card4.classList.remove('corbordCard');
     card4.classList.remove('corbordCard');
+    icon.classList.add('icon_visivel')
     prato = 'comida1';
     valorPrato = 10.50;
     cont1 = 1;
@@ -187,8 +190,16 @@ function selecionar15(){
   }
 
 // Fazer o pedido !!!
-total = Number(valorCoca +  valorPrato + valorSobremesa);
+total = valorCoca +  valorPrato + valorSobremesa;
 valor = cont1 + cont2 + cont3;
+
+console.log(valor)
+console.log(sobremesa)
+console.log(prato)
+console.log(cocoquinha)
+console.log(valorCoca)
+console.log(valorSobremesa)
+console.log(valorPrato)
 
 let msg = encodeURIComponent
 (`
@@ -198,10 +209,8 @@ Olá, gostaria de fazer o pedido:
  - Sobremesa:${sobremesa} valor:R$${valorSobremesa}
  Total: R$${total}`)
 
- console.log(valor)
-
 function fazerPeido(){
- if(valor == 3){
+ if(valor == 0){
   window.open('https://wa.me/5598984358019?text=' + msg);
  }
   
