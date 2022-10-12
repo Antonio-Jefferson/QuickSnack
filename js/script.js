@@ -197,7 +197,7 @@ Olá, gostaria de fazer o pedido:
  console.log(cont)
 
 function fazerPeido(){
- if(cont == 3){
+ if(cont <= 11){
   window.open('https://wa.me/5598984358019?text=' + msg);
  }
   
