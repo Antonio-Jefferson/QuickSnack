@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2{
+    margin: 27px 0px 17px 19px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: 
+    #CF2B2B;
+    color: #fff;
+    padding: 8px 26px;
+}
+.header h1{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400; 
+}
+.header p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.main{
+    margin-top: 31px;
+}
+.main h3, h4, p{
+    margin-bottom: 5px;
+}
+.main p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.main h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color:  #333333;
+}
+.main h4{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.section_pratos{
+    overflow: scroll;
+}
+.conteiner_pratos{
+    display: flex;
+    width: 1000px;
+    gap: 16px;
+    margin-left: 19px;
+}
+.card{
+    width: 172px;
+    height: 216px;
+    background-color: #fff;
+    padding: 18px 14px;
+    border-radius: 8px;
+}
+.card img{
+    width: 144px;
+    height: 87px;
+    border-radius: 8px;
+}
+.footer{ 
+    display: flex;
+    margin-top: 16px;
+    height: 92px;
+    background-color: #fff;
+    justify-content:center;
+}
+.btn{
+    width: 364px;
+    height: 61px;
+    border: none;
+    background-color: #CBCBCB;
+    opacity: 1;
+    color: #fff;
+    border-radius: 30px;
+    margin: 15px 25px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
