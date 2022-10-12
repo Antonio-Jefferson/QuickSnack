@@ -14,11 +14,17 @@ h2{
 p{
     font-family: 'Roboto', sans-serif;
 }
+
 .header{
+    width: 100%;
+    height: 92px;
     background-color: 
     #CF2B2B;
     color: #fff;
     padding: 8px 26px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 .header h1{
     font-family: 'Righteous', cursive;
@@ -30,7 +36,7 @@ p{
     font-weight: 400;
 }
 .main{
-    margin-top: 31px;
+    margin: 123px 0px 108px 0px;
 }
 .main h3, h4, p{
     margin-bottom: 5px;
@@ -56,7 +62,6 @@ p{
 }
 .conteiner_pratos{
     display: flex;
-    width: 1000px;
     gap: 16px;
     margin-left: 19px;
 }
@@ -73,11 +78,15 @@ p{
     border-radius: 8px;
 }
 .footer{ 
+    width: 100%;
     display: flex;
     margin-top: 16px;
     height: 92px;
     background-color: #fff;
     justify-content:center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 .btn{
     width: 364px;
