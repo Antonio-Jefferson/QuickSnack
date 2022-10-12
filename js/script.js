@@ -24,7 +24,10 @@ let valorCoca;
 let sobremesa;
 let valorSobremesa;
 let total;
-let cont;
+let cont1;
+let cont2;
+let cont3;
+let valor;
 
 //SESSÃO ONE!!!!!! ===================== eu SEI QUE NÃO É A MELHOR FORMA!
 function selecionar1(){
@@ -35,7 +38,7 @@ function selecionar1(){
     card4.classList.remove('corbordCard');
     prato = 'comida1';
     valorPrato = 10.50;
-    cont = 1;
+    cont1 = 1;
 }
 function selecionar2(){
   card2.classList.add('corbordCard');
@@ -45,7 +48,7 @@ function selecionar2(){
   card4.classList.remove('corbordCard');
   prato = 'comida2';
   valorPrato = 12.50;
-  cont = 1;
+  cont1 = 1;
 }
 function selecionar3(){
   card3.classList.add('corbordCard');
@@ -55,7 +58,7 @@ function selecionar3(){
   card5.classList.remove('corbordCard');
   prato = 'coomida3';
   valorPrato = 15.00;
-  cont = 1;
+  cont1 = 1;
 }
 function selecionar4(){
   card4.classList.add('corbordCard');
@@ -65,7 +68,7 @@ function selecionar4(){
   card2.classList.remove('corbordCard');
   prato = 'coomida4';
   valorPrato = 13.50;
-  cont = 1;
+  cont1 = 1;
 }
 function selecionar5(){
   card5.classList.add('corbordCard');
@@ -75,7 +78,7 @@ function selecionar5(){
   card3.classList.remove('corbordCard');
   prato = 'coomida5';
   valorPrato = 8.50;
-  cont = 1;
+  cont1 = 1;
 }
 
 ///SESSÃO TWO =============================================================================
@@ -88,7 +91,7 @@ function selecionar6(){
   card10.classList.remove('corbordCard');
   cocoquinha = 'coco1';
   valorCoca = 5.50;
-  cont = cont + 1;
+  cont2 = 1;
 }
 function selecionar7(){
   card7.classList.add('corbordCard');
@@ -98,7 +101,7 @@ function selecionar7(){
   card10.classList.remove('corbordCard');
   cocoquinha = 'coco2';
   valorCoca = 3.50;
-  cont = cont + 1;
+  cont2 = 1;
 }
 function selecionar8(){
   card8.classList.add('corbordCard');
@@ -108,7 +111,7 @@ function selecionar8(){
   card10.classList.remove('corbordCard');
   cocoquinha = 'coco3';
   valorCoca = 1.00;
-  cont = cont + 1;
+  cont2 = 1;
 }
 function selecionar9(){
   card9.classList.add('corbordCard');
@@ -118,7 +121,7 @@ function selecionar9(){
   card10.classList.remove('corbordCard');
   cocoquinha = 'coco4';
   valorCoca = 2.00;
-  cont = cont + 1;
+  cont2 = 1;
 }
 function selecionar10(){
   card10.classList.add('corbordCard');
@@ -128,7 +131,7 @@ function selecionar10(){
   card9.classList.remove('corbordCard');
   cocoquinha = 'coco5';
   valorCoca = 2.50;
-  cont = cont + 1;
+  cont2 = 1;
 }
 
 //SESSÃO THREE =============================================================================
@@ -140,7 +143,7 @@ function selecionar11(){
   card15.classList.remove('corbordCard');
   sobremesa = 'pudin1';
   valorSobremesa = 12.50;
-  cont = cont + 1;
+  cont3 = 1;
   }
 function selecionar12(){
   card12.classList.add('corbordCard');
@@ -150,7 +153,7 @@ function selecionar12(){
   card15.classList.remove('corbordCard');
   sobremesa = 'pudin1';
   valorSobremesa = 10.00;
-  cont = cont + 1;
+  cont3 = 1;
 }
 function selecionar13(){
   card13.classList.add('corbordCard');
@@ -160,7 +163,7 @@ function selecionar13(){
   card15.classList.remove('corbordCard');
   sobremesa = 'pudin1';
   valorSobremesa = 15.00;
-  cont = cont + 1;
+  cont3 =  1;
   }
 function selecionar14(){
   card14.classList.add('corbordCard');
@@ -170,7 +173,7 @@ function selecionar14(){
   card15.classList.remove('corbordCard');
   sobremesa = 'pudin1';
   valorSobremesa = 4.50;
-  cont = cont + 1;
+  cont3 =  1;
   }
 function selecionar15(){
   card15.classList.add('corbordCard');
@@ -180,11 +183,12 @@ function selecionar15(){
   card11.classList.remove('corbordCard');
   sobremesa = 'pudin1';
   valorSobremesa = 2.50;
-  cont = cont + 1;
+  cont3 =  1;
   }
 
 // Fazer o pedido !!!
 total = Number(valorCoca +  valorPrato + valorSobremesa);
+valor = cont1 + cont2 + cont3;
 
 let msg = encodeURIComponent
 (`
@@ -194,10 +198,10 @@ Olá, gostaria de fazer o pedido:
  - Sobremesa:${sobremesa} valor:R$${valorSobremesa}
  Total: R$${total}`)
 
- console.log(cont)
+ console.log(valor)
 
 function fazerPeido(){
- if(cont <= 11){
+ if(valor == 3){
   window.open('https://wa.me/5598984358019?text=' + msg);
  }
   
