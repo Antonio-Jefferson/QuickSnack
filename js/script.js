@@ -214,7 +214,7 @@ function fazerPedido(){
    `)
    
   if(valor == 3){
-    window.open('https://wa.me/5598984358019?text=' + msg);
+    window.open('https://wa.me/5598985856218?text=' + msg);
   }
   
 }
