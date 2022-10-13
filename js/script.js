@@ -195,12 +195,16 @@ function selecionar15(){
   valorSobremesa = 4.80;
   cont3 =  1;
   }
+//ATIVAR BOTÃO
+function activebtn(){
+
+}
  
 //fUNÇÃO PARA FAZER O PEDIDO
 function fazerPedido(){
   total = valorCoca +  valorPrato + valorSobremesa;
   valor = cont1 + cont2 + cont3;
-  valor.toFixed(2)
+  total.toFixed(2)
   let msg = encodeURIComponent
   (`
   *Olá, gostaria de fazer o pedido:*

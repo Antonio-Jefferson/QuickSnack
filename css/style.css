@@ -64,7 +64,7 @@ body{
     color: #000000;
 }
 .section_pratos{
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .section_pratos::-webkit-scrollbar{
     display: none;
