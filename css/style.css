@@ -41,7 +41,8 @@ body{
     font-weight: 400;
 }
 .main{
-    margin: 123px 0px 108px 0px;
+    width: 65%;
+    margin: 123px auto 108px auto;
 }
 .main h3, h4, p{
     margin-bottom: 5px;
@@ -65,6 +66,9 @@ body{
 .section_pratos{
     overflow: scroll;
 }
+.section_pratos::-webkit-scrollbar{
+    display: none;
+}
 .conteiner_pratos{
     display: flex;
     gap: 16px;
@@ -85,10 +89,10 @@ body{
 }
 .icon_visivel{
     display: block;
-    color: green;
+    color:#32B72F;
     position: absolute;
-    right: 4px;
-    bottom: 3px;
+    right: 10px;
+    bottom: 15px;
     font-size: 20px;
 }
 .card img{
@@ -121,6 +125,16 @@ body{
     font-size: 20px;
     font-weight: 400;
 }
+.btn_pedido_fechado{
+    background: #32B72F;
+    color: #fff;
+}
 .corbordCard{
-    border: 2px solid green;
+    /* border: 2px solid #32B72F; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+@media(max-width:612px){
+    .main{
+        width: 100%;
+    }
 }
