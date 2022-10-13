@@ -65,6 +65,7 @@ body{
 }
 .section_pratos{
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 .section_pratos::-webkit-scrollbar{
     display: none;
@@ -76,7 +77,7 @@ body{
 }
 .card{
     width: 172px;
-    height: 216px;
+    height: 220px;
     background-color: #fff;
     padding: 18px 14px;
     border-radius: 8px;
