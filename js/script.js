@@ -204,13 +204,13 @@ function fazerPedido(){
   let msg = encodeURIComponent
   (`
   *Olá, gostaria de fazer o pedido:*
-   *- Prato:* ${prato}                ${valorPrato}
-   *- Bebida:* ${cocoquinha}          ${valorCoca}
-   *- Sobremesa:* ${sobremesa}        ${valorSobremesa}
+   *- Prato:* ${prato}               
+   *- Bebida:* ${cocoquinha}        
+   *- Sobremesa:* ${sobremesa}       
      *Total:* *R$${total}*
-   --------------------------------------------------
-   *Nome:* ${nome};
-   *Endereço:* ${endereco}
+   ---------------------------------
+  *Nome:* ${nome};
+  *Endereço:* ${endereco}
    `)
    
   if(valor == 3){
