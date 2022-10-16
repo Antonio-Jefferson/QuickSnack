@@ -11,7 +11,7 @@ let valorSobremesa;
 
 // Selecionando Prato 
 function selecionarComida(comidaSelecionada){
-  
+  const iconAnterior = document.querySelector('.icon_visivel')
   const comidaAnterior = document.querySelector('.bordComida')
   if(comidaAnterior !== null){
     comidaAnterior.classList.remove('bordComida')
@@ -28,6 +28,13 @@ function selecionarComida(comidaSelecionada){
   valorComida = valorPrato.innerHTML;
   console.log(valorComida);
 
+  //Fazer icon aparecer
+  const icon = document.querySelector('.bordComida .icon_invisivel');
+  icon.classList.add('icon_visivel')
+  if(iconAnterior !== null){
+    iconAnterior.classList.remove('icon_visivel')
+  } 
+
   ativarBTN()
 
 }
@@ -35,6 +42,7 @@ function selecionarComida(comidaSelecionada){
 
 //Selecionando a Bebiba =================================================================
 function selecionarCoca(cocaSelecionada){
+  const iconAnterior = document.querySelector('.icon_visivel')
   const bebibaAnterior = document.querySelector('.bordCoca')
     if(bebibaAnterior !== null){
       bebibaAnterior.classList.remove('bordCoca');
@@ -50,7 +58,12 @@ function selecionarCoca(cocaSelecionada){
   //Pegar valor da bebida
   const valorCoca = document.querySelector('.bordCoca > h4 > strong')
   valorBebida = valorCoca.innerHTML;
-  console.log(valorBebida);
+
+  const icon = document.querySelector('.bordCoca .icon_invisivel');
+  icon.classList.add('icon_visivel')
+  if(iconAnterior !== null){
+    iconAnterior.classList.remove('icon_visivel')
+  } 
   ativarBTN()
 
 }

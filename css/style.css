@@ -87,14 +87,14 @@ body{
 }
 .icon_invisivel{
     display: none;
-}
-.icon_visivel{
-    display: block;
     color:#32B72F;
     position: absolute;
     right: 10px;
     bottom: 15px;
     font-size: 20px;
+}
+.icon_visivel{
+    display: block;
 }
 
  img{
@@ -143,6 +143,78 @@ body{
 }
 .bordComida, .bordCoca, .bordSobremesa{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.visivel{
+    visibility: visible;
+}
+.teladeComfirmacao{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 21px 26px;
+
+    background-color: #fff;
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}
+.descricao{
+    width: 377px;
+    height: 353px;
+    padding: 21px 26px;
+
+    background-color: #50D074;
+    border-radius: 10px;
+}
+.descricao h1{
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.joana{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.btn_confimar{
+    width: 329px;
+    height: 52px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #50D074;
+}
+.btn_cancelar{
+    height: 37px;
+    background-color: #50D074;
+    color: #fff;
+    text-align: center;
+    border:none;
+    
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
 }
 @media(max-width:612px){
     .main{
