@@ -11,7 +11,7 @@ let valorSobremesa;
 
 // Selecionando Prato 
 function selecionarComida(comidaSelecionada){
-  const iconAnterior = document.querySelector('.icon_visivel')
+  const iconAnterior = document.querySelector('.comidas .icon_visivel')
   const comidaAnterior = document.querySelector('.bordComida')
   if(comidaAnterior !== null){
     comidaAnterior.classList.remove('bordComida')
@@ -20,13 +20,11 @@ function selecionarComida(comidaSelecionada){
 
   //Pegando o nome da Comida
   const nomeComida = document.querySelector('.bordComida > h3')
-  comida =  nomeComida.innerText;
-  console.log(comida) 
+  comida =  nomeComida.innerText; 
 
   //pegar valor da comida
   const valorPrato = document.querySelector('.bordComida > h4 > strong')
   valorComida = valorPrato.innerHTML;
-  console.log(valorComida);
 
   //Fazer icon aparecer
   const icon = document.querySelector('.bordComida .icon_invisivel');
@@ -42,7 +40,7 @@ function selecionarComida(comidaSelecionada){
 
 //Selecionando a Bebiba =================================================================
 function selecionarCoca(cocaSelecionada){
-  const iconAnterior = document.querySelector('.icon_visivel')
+  const iconAnterior = document.querySelector('.bebidas .icon_visivel')
   const bebibaAnterior = document.querySelector('.bordCoca')
     if(bebibaAnterior !== null){
       bebibaAnterior.classList.remove('bordCoca');
@@ -53,7 +51,6 @@ function selecionarCoca(cocaSelecionada){
   //Pegando o nome da bebida 
   const nomeCoca = document.querySelector('.bordCoca > h3')
   coca =  nomeCoca.innerText;
-  console.log(coca)
 
   //Pegar valor da bebida
   const valorCoca = document.querySelector('.bordCoca > h4 > strong')
@@ -71,20 +68,27 @@ function selecionarCoca(cocaSelecionada){
 
 //Selecionando a Sobremesa ================================================================
 function selecionarSobremesa(sobremesaSelecionada){
+  const iconAnterior = document.querySelector('.sobremesas .icon_visivel')
   const sobremesaAnterior = document.querySelector('.bordSobremesa');
   if(sobremesaAnterior !== null){
     sobremesaAnterior.classList.remove('bordSobremesa')
   }
-
   sobremesaSelecionada.classList.add("bordSobremesa")
+
   //Pegando o nome da Sobremesa 
   const nomeSobremesa = document.querySelector('.bordSobremesa > h3')
   sobremesa =  nomeSobremesa.innerText;
-  console.log(sobremesa)
-    //Pegar valor da Sobremesa
-    const valorSobre = document.querySelector('.bordSobremesa > h4 > strong')
-    valorSobremesa = valorSobre.innerHTML;
-    console.log(valorSobremesa);
+
+  //Pegar valor da Sobremesa
+  const valorSobre = document.querySelector('.bordSobremesa > h4 > strong')
+  valorSobremesa = valorSobre.innerHTML;
+
+  //Fazer icon aparecer 
+    const icon = document.querySelector('.bordSobremesa .icon_invisivel');
+    icon.classList.add('icon_visivel')
+    if(iconAnterior !== null){
+      iconAnterior.classList.remove('icon_visivel')
+  } 
   ativarBTN()
  
 }
@@ -95,9 +99,12 @@ function ativarBTN() {
   const comida = document.querySelector(".bordComida");
   const coca = document.querySelector(".bordCoca");
   const sobremesa = document.querySelector(".bordSobremesa");
+  
   const botao = document.querySelector(".btn");
   if (comida !== null) { //Vericando se a 'Comida' é null, se for diferente de null quer dizer que foi selecionada!
+    botao.innerHTML ="Você tem mais 2 opções"
     if (coca !== null) {
+      botao.innerHTML = "Você só tem mais 1 opção para escolher"
       if (sobremesa !== null) {
           //troca botão de finalizar pedido
           botao.innerHTML = "Fechar Pedido";
