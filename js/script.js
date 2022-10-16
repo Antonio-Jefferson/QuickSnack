@@ -118,7 +118,8 @@ function ativarBTN() {
 
 //Funcção para enviar o pedido!!! ==================================================
 function fazerPedido(){
-  //Perguntando o endereço e o nome do usuario
+  if(comida !== undefined && coca !== undefined && sobremesa !== undefined){
+     //Perguntando o endereço e o nome do usuario
   const nome = prompt("QUAL SEU NOME?:");
   const endereco = prompt("ENDEREÇO DE ENTREGA: ")
 
@@ -126,19 +127,21 @@ function fazerPedido(){
   const nu1 = valorComida.replace(',','.');
   const nu2 = valorBebida.replace(',','.');
   const nu3 = valorSobremesa.replace(',', '.');
-  //Convertendo para número e azendo a soma
+  //Convertendo para número e fazendo a soma
   total = Number(nu1) + Number(nu2) + Number(nu3);
 
   let msg = encodeURIComponent
   (`
-  *Olá, gostaria de fazer o pedido:*
-   *- Prato:* ${comida}               
-   *- Bebida:* ${coca}        
-   *- Sobremesa:* ${sobremesa}       
-     *Total: R$${total}*
-   ---------------------------------
-  *Nome:* ${nome};
-  *Endereço:* ${endereco}
+  Olá, gostaria de fazer o pedido:*
+  - Prato: ${comida}               
+  - Bebida: ${coca}        
+  - Sobremesa: ${sobremesa}       
+  Total: R$${total}
+
+  Nome: ${nome};
+  Endereço: ${endereco}
    `)
   window.open('https://wa.me/5598985856218?text=' + msg);
+  }
+ alert('Você precisa escolher as 3 opções!')
 }
