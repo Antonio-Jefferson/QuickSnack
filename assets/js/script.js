@@ -119,6 +119,8 @@ function telaConfirmacao(){
   if(comida !== undefined && coca !== undefined && sobremesa !== undefined){
         const tela = document.querySelector('.teladeConfirmacao');
         tela.classList.remove('teladeConfirmacao');
+        tela.classList.add('visivel');
+
       
         const p_comida = document.querySelector('.p_comida');
         const p_valorComida = document.querySelector('.p_valorComida');
