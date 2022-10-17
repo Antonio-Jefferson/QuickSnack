@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driveneats</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -109,7 +109,7 @@
             <div class="section_pratos">
                 <div class="conteiner_pratos sobremesas">
                     <div  onclick="selecionarSobremesa(this)" class="cardSobremesa">
-                        <img src="img/pudim 1.png" >
+                        <img src="./assets/img/pudim 1.png" >
                         <h3>Pudim</h3>
                         <p>Um pouco de batata</p>
                         <h4>R$<strong>12,00</strong></h4>
@@ -149,38 +149,41 @@
     </main>
     <footer class="footer">
         <div class="div_btn">
-            <button class="btn" onclick="fazerPedido()">Selecione os 3 itens <br> para fechar o pedido</button>
+            <button class="btn" onclick="telaConfirmacao()">Selecione os 3 itens <br> para fechar o pedido</button>
         </div>
     </footer> 
-    <!-- <div class="teladeComfirmacao">
+    <div class="teladeConfirmacao visivel idetificador">
         <div class="descricao">
             <h1>Confirme seu pedido</h1>
             <div>
-                <div class="joana">
-                    <p class="p_comida">NomePrato</p>
-                    <p class="p_valorComida">valor</p>
+                <div class="descricaoPratos">
+                    <p class="p_comida"></p>
+                    <p class="p_valorComida"></p>
                 </div>
-                <div class="joana">
-                    <p class="p_bebida">nomeBebida</p>
-                    <p class="p_valorBebida">valor</p>
+                <div class="descricaoPratos">
+                    <p class="p_bebida"></p>
+                    <p class="precoBebida"></p>
                 </div>
-                <div class="joana">
-                    <p class="p_sobremesa">nomeSobremesa</p>
-                    <p class="p_valorSobremesa">valor</p>
+                <div class="descricaoPratos">
+                    <p class="nomeSobremesa"></p>
+                    <p class="precoSobremesa"></p>
                 </div>
-                <div class="joana">
+                <div class="descricaoPratos">
                     <p>TOTAL</p>
-                    <p class="total">precoFinal</p>
+                    <div class="totalDireita">
+                        <p>R$</p>
+                        <p class="precoTotal"></p>
+                    </div>
                 </div>
             </div>
             <div class="btns">
                 <button class="btn_confimar" onclick="fazerPedido()">Tudo certo, pode pedir!</button>
-                <button class="btn_cancelar">Cancelar</button>
+                <button class="btn_cancelar" onclick="cancelar()">Cancelar</button>
             </div>
         </div>
-    </div>   -->
+    </div>  
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
