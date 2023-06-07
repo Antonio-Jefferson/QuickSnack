@@ -1,7 +1,7 @@
 
 # QuickSnack - Site Mobile
 
-QuickSnack is a restaurant that specializes in delivering orders in a record time of just 6 minutes. In this project, you will have the opportunity to implement the DrivenEats mobile site, which offers a simple and intuitive experience for customers to choose their dish, drink and dessert combo.
+QuickSnack is a restaurant that specializes in delivering orders in a record time of just 6 minutes. In this project, you will have the opportunity to implement the QuickSnack mobile site, which offers a simple and intuitive experience for customers to choose their dish, drink and dessert combo.
 
 
 ## Installation
@@ -28,7 +28,7 @@ The QuickSnack mobile site project will be implemented using the following techn
 
 The QuickSnack mobile site will offer the following features:
 
-- Dish Choice: Customers will be able to select from a variety of dishes available on the DrivenEats menu. Each dish will have a description and a picture to help you choose.
+- Dish Choice: Customers will be able to select from a variety of dishes available on the QuickSnack menu. Each dish will have a description and a picture to help you choose.
 
 - Choice of Drink: It will be possible to select a drink to accompany the chosen dish. The drinks menu will include soft drinks, juices, water and other options.
 
