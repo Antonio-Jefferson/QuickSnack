@@ -16,11 +16,11 @@ Open the file:
 ```
 Open the index.js file in the browser
 ## 🛠 Skills
-O projeto do site mobile do DrivenEats será implementado utilizando as seguintes tecnologias:
+The QuickSnack mobile site project will be implemented using the following technologies:
 
-- <span style="background-color: yellow">JavaScript</span>: A linguagem de programação principal para a lógica do site.
-- <span style="background-color: orange">HTML</span>: Utilizado para estruturar o conteúdo do site.
-- <span style="background-color: blue">CSS</span>: Responsável pela estilização e aparência visual do site.
+- <span style="background-color: yellow">JavaScript</span>: The main programming language for the site logic.
+- <span style="background-color: orange">HTML</span>: Used to structure the content of the site.
+- <span style="background-color: blue">CSS</span>: Responsible for styling and visual appearance of the site.
 
 
 
